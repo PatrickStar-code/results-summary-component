@@ -1,0 +1,120 @@
+:root {
+  --LightRed: hsl(0, 100%, 67%);
+  --OrangeyYellow: hsl(39, 100%, 56%);      
+  --GreeneTeal: hsl(166, 100%, 37%);
+  --CobaltBlue: hsl(234, 85%, 45%);
+
+  --LightBlateblue: hsl(252, 100%, 67%);
+  --LightRoyalBlue: hsl(241, 81%, 54%);
+
+  --VioletBlue: hsla(256, 72%, 46%, 1);
+  --PersianBlue: hsla(241, 72%, 46%, 0);
+
+  --White: hsl(0, 0%, 100%);
+  --PaleBlue: hsl(221, 100%, 96%);
+  --LightLavender: hsl(241, 100%, 89%);
+  --DarkGrayBlue: hsl(224, 30%, 27%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk",'open-sans';
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--White);
+  margin-top: 5rem;
+}      
+
+.card {
+ display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  
+  border-radius: 1rem;
+  box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.card .left{
+    background: linear-gradient(to bottom, var(--LightBlateblue), var(--LightRoyalBlue));
+    text-align: center;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    border-radius: 1rem;
+
+}
+
+.card .left .title{
+  color: var(--PaleBlue);
+  font-size: 1.4rem;
+}
+
+.card .left .circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem;
+    border-radius: 100%;
+    width: 15rem;
+    margin: 2rem;
+    font-size: 1.5rem;
+    background: linear-gradient(to bottom , var(--VioletBlue), var(--PersianBlue));
+}
+
+.result{
+  font-size: 4rem;
+  color: var(--White);
+}
+
+.attemps{
+  color: var(--White);
+}
+
+.result-message{
+  color: var(--White);
+  text-align: center;
+  width: 13rem;
+}
+
+.result-message p{
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-size: bold;
+}
+
+.result-message small{
+  font-size: 0.875rem;
+  margin: 1rem;
+  padding:
+}
+
+.card .right{
+-  text-align: center;
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  border-radius: 1rem;
+  
+}
