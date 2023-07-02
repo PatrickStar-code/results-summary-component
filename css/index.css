@@ -21,13 +21,8 @@
   box-sizing: border-box;
   font-family: "Hanken Grotesk", "open-sans";
 }
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
-}
+
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -47,7 +42,7 @@ main {
   align-items: center;
   flex-direction: column;
   background-color: var(--White);
-  margin-top: 5rem;
+  margin-top: 10rem;
 }
 
 .card {
@@ -144,9 +139,16 @@ main {
   display: flex;
   align-items: center;
   text-align: center;
-  justify-content: start;
+  justify-content: space-between;
   padding: 0.5rem;
   margin-top:0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.Badge div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .Reactions{
@@ -187,6 +189,14 @@ button:hover{
   background-color: var(--LightBlateblue);
 }
 
+.score{
+  color: var(--LightLavender);
+}
+
+.score p:first-of-type{
+  font-weight: bold;
+  color: black;
+}
 
 @media screen and (min-width: 375px) {
  
