@@ -1,6 +1,6 @@
 :root {
   --LightRed: hsl(0, 100%, 67%);
-  --OrangeyYellow: hsl(39, 100%, 56%);      
+  --OrangeyYellow: hsl(39, 100%, 56%);
   --GreeneTeal: hsl(166, 100%, 37%);
   --CobaltBlue: hsl(234, 85%, 45%);
 
@@ -13,16 +13,21 @@
   --White: hsl(0, 0%, 100%);
   --PaleBlue: hsl(221, 100%, 96%);
   --LightLavender: hsl(241, 100%, 89%);
-  --DarkGrayBlue: hsl(224, 30%, 27%);
-}
+  --DarkGrayBlue: hsl(224, 30%, 27%);}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Hanken Grotesk",'open-sans';
+  font-family: "Hanken Grotesk", "open-sans";
 }
-
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -31,6 +36,11 @@
   color: hsl(228, 45%, 44%);
 }
 
+img {
+  width: 3rem;
+  padding: 1rem;
+} 
+
 main {
   display: flex;
   justify-content: center;
@@ -38,77 +48,24 @@ main {
   flex-direction: column;
   background-color: var(--White);
   margin-top: 5rem;
-}      
+}
 
 .card {
- display: grid;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
-  
   border-radius: 1rem;
   box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.2);
+  width: 43rem; 
 }
 
-.card .left{
-    background: linear-gradient(to bottom, var(--LightBlateblue), var(--LightRoyalBlue));
-    text-align: center;
-    padding: 2rem;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    width: 20rem;
-    border-radius: 1rem;
-
-}
-
-.card .left .title{
-  color: var(--PaleBlue);
-  font-size: 1.4rem;
-}
-
-.card .left .circle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 4rem;
-    border-radius: 100%;
-    width: 15rem;
-    margin: 2rem;
-    font-size: 1.5rem;
-    background: linear-gradient(to bottom , var(--VioletBlue), var(--PersianBlue));
-}
-
-.result{
-  font-size: 4rem;
-  color: var(--White);
-}
-
-.attemps{
-  color: var(--White);
-}
-
-.result-message{
-  color: var(--White);
+.card .left {
+  background: linear-gradient(
+    to bottom,
+    var(--LightBlateblue),
+    var(--LightRoyalBlue)
+  );
   text-align: center;
-  width: 13rem;
-}
-
-.result-message p{
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  font-size: bold;
-}
-
-.result-message small{
-  font-size: 0.875rem;
-  margin: 1rem;
-  padding:
-}
-
-.card .right{
--  text-align: center;
   padding: 2rem;
   align-items: center;
   justify-content: center;
@@ -116,5 +73,121 @@ main {
   flex-direction: column;
   width: 20rem;
   border-radius: 1rem;
-  
+}
+
+.card .left .title {
+  color: var(--PaleBlue);
+  font-size: 1.4rem;
+}
+
+.card .left .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3.5rem;
+  border-radius: 100%;
+  width: 15rem;
+  margin: 2rem;
+  font-size: 1.5rem;
+  background: linear-gradient(to bottom, var(--VioletBlue), var(--PersianBlue));
+}
+
+.result {
+  font-size: 4rem;
+  color: var(--White);
+}
+
+.attemps {
+  color: var(--White);
+}
+
+.result-message {
+  color: var(--White);
+  text-align: center;
+  width: 13rem;
+}
+
+.result-message p {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-size: bold;
+}
+
+.result-message small {
+  font-size: 0.875rem;
+}
+
+.card .right {
+  padding: 2rem;
+  align-items: start;
+  justify-content: start;
+  display: flex;
+  flex-direction: column;
+  width: 23rem;
+  border-radius: 1rem;
+}
+
+.card .right section{
+  margin-bottom: 4rem
+}
+
+.card .right .summary header {
+  font-size: 1.4rem;
+  margin-bottom: 3.5rem;
+}
+
+.Badge {
+  width: 18rem;
+  border-radius: 1rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: start;
+  padding: 0.5rem;
+  margin-top:0.75rem;
+}
+
+.Reactions{
+  color: var(--LightRed);
+  background-color: #FFF6F5;
+}
+
+.Memory{
+  color: var(--OrangeyYellow);
+  background-color: #FFFAF0;
+}
+
+.Verbal{
+  color: var(--GreeneTeal);
+  background-color: #F3FBFA;
+}
+
+.Visual{
+  color: var(--CobaltBlue);
+  background-color: #f2f2fD;
+}
+
+button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 2rem;
+  width: 18rem;
+  background-color: var(--LightRoyalBlue);
+  color: var(--White);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+button:hover{
+  background-color: var(--LightBlateblue);
+}
+
+
+@media screen and (min-width: 375px) {
+ 
 }
