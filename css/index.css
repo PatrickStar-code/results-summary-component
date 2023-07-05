@@ -198,6 +198,37 @@ button:hover{
   color: black;
 }
 
-@media screen and (min-width: 375px) {
- 
+@media screen and (max-width: 375px) {
+  main{
+    margin-top: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.2);
+    width: 100%;
+    
+  }
+
+  .card .left{
+    border-radius: 0 0 5rem 5rem;
+    width: 26rem;
+  }
+  
+  .card .left .circle{
+    width: 12rem;
+    margin: 0;
+    height: 11rem;
+  }
+
+
+
+
+  
 }
