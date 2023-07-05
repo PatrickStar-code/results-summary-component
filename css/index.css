@@ -42,7 +42,7 @@ main {
   align-items: center;
   flex-direction: column;
   background-color: var(--White);
-  margin-top: 7.75rem;
+  margin-top: 10rem;
 }
 
 .card {
