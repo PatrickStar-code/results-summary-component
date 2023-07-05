@@ -42,7 +42,7 @@ main {
   align-items: center;
   flex-direction: column;
   background-color: var(--White);
-  margin-top: 5rem;
+  margin-top: 7.75rem;
 }
 
 .card {
@@ -198,7 +198,7 @@ button:hover{
   color: black;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   main{
     margin-top: 0;
     overflow-y: hidden;
